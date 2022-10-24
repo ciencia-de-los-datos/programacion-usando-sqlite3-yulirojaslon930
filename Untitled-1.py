@@ -6,7 +6,7 @@ cur = conn.cursor()
 
 with open("create_tables.sql", encoding="utf-8") as file:
     cur.executescript(file.read())
-query = "SELECT * FROM tbl1 LIMIT 5 ORDER BY c14 ASC"
+query = "SELECT COUNT(*) WHERE YEAR(tbl1.c14) ='2018'"
 
 data = conn.execute(query)
 for i in data:

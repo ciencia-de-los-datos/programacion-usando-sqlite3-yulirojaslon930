@@ -43,3 +43,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+SELECT *
+FROM tbl1
+WHERE tbl1.K0 == 'A'
+ORDER BY tbl1.c14 ASC
