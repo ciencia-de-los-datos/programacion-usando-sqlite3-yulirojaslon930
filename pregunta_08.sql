@@ -41,4 +41,6 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-SELECT K0, avg(tbl2.c21) FROM tbl1 JOIN tbl2 ON tbl1.K1 = tbl2.K1 WHERE tbl1.c13 > 400 GROUP BY tbl1.K0
+SELECT strftime('%Y', c23),avg(c21)
+FROM tbl2
+GROUP BY 1
